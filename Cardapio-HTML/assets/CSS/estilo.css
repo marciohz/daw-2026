@@ -1,0 +1,76 @@
+:root {
+    --texto: #0e0c0c;
+}
+
+/*******
+* ELPEPE
+********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+p {
+    color: var(--texto);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--texto);
+    background-color: #f4f0f0;
+}
+
+
+/***********
+*CABECARIO
+************/
+header {
+    background-color: #ffffffff;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+}
+
+header .brand img {
+    width: 3rem;
+}
+
+header .brand h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.05px;
+
+}
+
+header .brand p {
+    font-size: 0.8rem;
+    margin-top: 2px;
+    color: #78716c;
+
+}
+header .cart-button{
+    border: 1px solid #d5d8df;
+    display: flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+
+}
+
+
+header .cart-button {
+    width: 1.25rem;
+    height: 1.25rem;
+}
