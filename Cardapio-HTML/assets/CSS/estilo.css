@@ -1,71 +1,101 @@
-:root{
-    --text: #1c1917
-    --text-muted: #78716c
-    --primary: #eab308
+:root {
+    --text: #1c1917;
+    --text-muted: #78716c;
+    --primary: #800020;
+    --bg: #fafaf9;
 }
-header {
-    background-color: #fcfcfc;
-    color: var(--text);
-}
-p{
-    color: var(--text);
-}
+
+
 /****
 reset CSS
 ****/
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+
+/****
+configuração geral
+****/
+
+body {
     font-family: 'Inter', sans-serif;
     color: var(--text);
     background-color: var(--bg);
 }
 
-.container{
+p {
+    color: var(--text);
+}
+
+
+/****
+container
+****/
+
+.container {
     width: min(100%, 1200px);
     margin: auto;
 }
 
+
 /****
 cabeçalho
-*****/
-header{
+****/
+
+header {
     background-color: #ffffff;
+}
+
+
+/****
+parte de cima do cabeçalho
+****/
+
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 0.5rem;
 }
 
-header .container,
-footer .container{
-    display: flex;
-    justify-content: space-between;
 
-}
+/****
+logo + texto
+****/
 
-header .brand{
+header .brand {
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
-header .brand img{
+
+header .brand img {
     height: 3rem;
 }
-header .brand h1{
+
+header .brand h1 {
     font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.5px;
 }
-header .brand p{
+
+header .brand p {
     font-size: 0.8rem;
     margin-top: 2px;
     color: var(--text-muted);
 }
-header .cart-buttom{
+
+
+/****
+carrinho
+****/
+
+header .cart-button {
     display: flex;
     border: 1px solid #e7e5e4;
     width: 2.75rem;
@@ -74,26 +104,29 @@ header .cart-buttom{
     justify-content: center;
     border-radius: 0.75rem;
 }
-header .cart-buttom img{
+
+header .cart-button img {
     width: 1.25rem;
     height: 1.25rem;
 }
 
+
 /***********
 navegação
 ************/
-nav{
-    background-color: #ffffff;
 
+nav {
+    background-color: #ffffff;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
     padding-block: 1rem;
-
 }
-nav ul li a{
+
+nav ul li a {
     border: 1px solid #e7e5e4;
     border-radius: 99px;
     padding: 0.5rem 1rem;
@@ -102,31 +135,17 @@ nav ul li a{
     font-size: 0.875rem;
     font-weight: 500;
 }
-nav ul a:hover{
+
+nav ul a:hover {
     border-color: var(--primary);
-    background-color: #eab308;
+    background-color: var(--primary);
+    color: var(--text);
 }
+
+
 /***
-FOOTER
+PRODUTOS
 ****/
-footer{
-    background-color: var(--text-muted);
-    color: var(--bg);
-    font-size: 0.8rem;
-    font-weight: 300;
-    margin-top: 2rem;
-    padding-block: 1.5rem;
-}
-
-footer .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .container{
-    align-items: center;
-}   
 
 main div {
     display: grid;
@@ -140,4 +159,31 @@ main img {
     max-width: 350px;
     height: auto;
     margin: 0 auto;
+}
+
+
+/***
+FOOTER
+****/
+
+footer {
+    background-color: var(--text-muted);
+    color: var(--bg);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    padding-block: 1.5rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
 }
