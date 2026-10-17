@@ -1,0 +1,356 @@
+function App() {
+  return (
+    <>
+      Olá Mundo!
+    </>
+  )
+}
+
+export default App
+
+<header>
+    <div class="container header-top">
+        <div class="brand">
+            <img src="./assets/img/logo_lanchonete.svg" alt="Logo da Lanchonete">
+            <div>
+                <h1>Cardápio Digital</h1>
+                <p>Faça seu pedido aqui</p>
+            </div>
+        </div>
+
+        <div class="cart-button">
+            <img src="./assets/img/cart.svg" alt="Carrinho de Compras">
+        </div>
+    </div>
+
+    <nav>
+        <ul class="container">
+            <li><a href="#" class="filtro active" data-categoria="todos">todos</a></li>
+            <li><a href="#" class="filtro" data-categoria="lanches">lanches</a></li>
+            <li><a href="#" class="filtro" data-categoria="porções">porções</a></li>
+            <li><a href="#" class="filtro" data-categoria="bebidas">bebidas</a></li>
+            <li><a href="#" class="filtro" data-categoria="sobremesas">sobremesas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="produtos">
+
+        <header>
+            <h2>Produtos</h2>
+            <p>10 itens</p>
+        </header>
+
+        <div class="produtos-grid">
+
+            <article>
+                <figure>
+                    <img src="assets/img/burger.png" alt="Burguer">
+                    <figcaption>Lanches</figcaption>
+                    <h3>Burguer</h3>
+                </figure>
+                <div class="info">
+                    <p>Pão brioche, hambúrguer 160g, queijo prato e molho da casa.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 22,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/burger-bacon.png" alt="Bacon Burger">
+                    <figcaption>Lanches</figcaption>
+                    <h3>Bacon Burger</h3>
+                </figure>
+                <div class="info">
+                    <p>Pão brioche, hambúrguer 160g, bacon, queijo cheddar e molho da casa.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 25,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/burger-double.png" alt="Duplo Burguer">
+                    <figcaption>Lanches</figcaption>
+                    <h3>Duplo Burguer</h3>
+                </figure>
+                <div class="info">
+                    <p>Dois hambúrgueres de 160g cada, cheddar, bacon e cebola caramelizada.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 29,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/batata-rustica.png" alt="Batata Rustica">
+                    <figcaption>Porções</figcaption>
+                    <h3>Batata Rustica</h3>
+                </figure>
+                <div class="info">
+                    <p>Porção de batata com alecrim, parmesão e maionese verde.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 18,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/batata-tradicional.png" alt="Batata Tradicional">
+                    <figcaption>Porções</figcaption>
+                    <h3>Batata Tradicional</h3>
+                </figure>
+                <div class="info">
+                    <p>Porção de batata e maionese verde.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 15,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/agua.png" alt="Água Sem Gás">
+                    <figcaption>Bebidas</figcaption>
+                    <h3>Água sem gás</h3>
+                </figure>
+                <div class="info">
+                    <p>Garrafa descartável de água sem gás com 500 ml.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 8,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/refri.png" alt="Refrigerante">
+                    <figcaption>Bebidas</figcaption>
+                    <h3>Refrigerante</h3>
+                </figure>
+                <div class="info">
+                    <p>Copo de refrigerante de 300 ml.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 10,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/chopp.png" alt="Chopp">
+                    <figcaption>Bebidas</figcaption>
+                    <h3>Chopp</h3>
+                </figure>
+                <div class="info">
+                    <p>Caneca de 300 ml do nosso chopp pilsen geladíssimo.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 15,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/petit-gateau.png" alt="Petit Gateau">
+                    <figcaption>Sobremesas</figcaption>
+                    <h3>Petit Gateau</h3>
+                </figure>
+                <div class="info">
+                    <p>Petit Gateau com uma bola de sorvete de creme.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 25,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/mousse-maracuja.png" alt="Mousse de Maracujá">
+                    <figcaption>Sobremesas</figcaption>
+                    <h3>Mousse de Maracujá</h3>
+                </figure>
+                <div class="info">
+                    <p>Mousse de maracujá feito com a fruta de verdade.</p>
+                    <div class="info-footer">
+                        <span class="price">R$ 18,00</span>
+                        <button type="button">Adicionar</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <aside class="carrinho">
+        <h2>Carrinho</h2>
+
+        <ul class="carrinho-itens">
+            <li class="vazio">Nenhum item adicionado ainda.</li>
+        </ul>
+
+        <div class="carrinho-total">
+            <span>Total</span>
+            <strong>R$ 0,00</strong>
+        </div>
+
+        <button type="button">Finalizar pedido</button>
+    </aside>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>Cardapio Digital - Desenvolvimento de aplicações web</p>
+        <p>Rua Mato Grosso, 200 - Pato Branco/PR</p>
+        <a href="https://github.com/marciohz">
+            <img src="./assets/img/judy.png" alt="GitHub">
+        </a>
+    </div>
+</footer>
+
+<script>
+    const filtros = document.querySelectorAll(".filtro");
+    const produtos = document.querySelectorAll(".produtos-grid article");
+
+    filtros.forEach(function (filtro) {
+        filtro.addEventListener("click", function (evento) {
+            evento.preventDefault();
+
+            const categoria = filtro.getAttribute("data-categoria");
+
+            filtros.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            filtro.classList.add("active");
+
+            produtos.forEach(function (produto) {
+                const categoriaProduto = produto
+                    .querySelector("figcaption")
+                    .textContent
+                    .trim()
+                    .toLowerCase();
+
+                if (categoria === "todos" || categoriaProduto === categoria) {
+                    produto.style.display = "flex";
+                } else {
+                    produto.style.display = "none";
+                }
+            });
+        });
+    });
+
+    const botoesAdicionar = document.querySelectorAll(
+        ".produtos-grid article .info-footer button"
+    );
+
+    const listaCarrinho = document.querySelector(".carrinho-itens");
+    const totalCarrinho = document.querySelector(".carrinho-total strong");
+
+    let carrinho = [];
+
+    botoesAdicionar.forEach(function (botao) {
+        botao.addEventListener("click", function () {
+
+            const produto = this.closest("article");
+
+            const nome = produto.querySelector("h3").textContent.trim();
+
+            const preco = Number(
+                produto.querySelector(".price").textContent
+                    .replace("R$", "")
+                    .replace(/\./g, "")
+                    .replace(",", ".")
+                    .trim()
+            );
+
+            const itemExistente = carrinho.find(function (item) {
+                return item.nome === nome;
+            });
+
+            if (itemExistente) {
+                itemExistente.quantidade++;
+            } else {
+                carrinho.push({
+                    nome: nome,
+                    preco: preco,
+                    quantidade: 1
+                });
+            }
+
+            atualizarCarrinho();
+        });
+    });
+
+    function atualizarCarrinho() {
+
+        listaCarrinho.innerHTML = "";
+
+        let total = 0;
+
+        carrinho.forEach(function (item, index) {
+
+            const subtotal = item.preco * item.quantidade;
+
+            total += subtotal;
+
+            const li = document.createElement("li");
+            li.className = "carrinho-item";
+
+            const botaoMenos = document.createElement("button");
+            botaoMenos.type = "button";
+            botaoMenos.textContent = "-";
+
+            botaoMenos.addEventListener("click", function () {
+
+                item.quantidade--;
+
+                if (item.quantidade <= 0) {
+                    carrinho.splice(index, 1);
+                }
+
+                atualizarCarrinho();
+            });
+
+            const nome = document.createElement("span");
+            nome.textContent = item.nome + " x" + item.quantidade;
+
+            const preco = document.createElement("strong");
+            preco.textContent =
+                "R$ " +
+                subtotal.toFixed(2).replace(".", ",");
+
+            li.appendChild(botaoMenos);
+            li.appendChild(nome);
+            li.appendChild(preco);
+
+            listaCarrinho.appendChild(li);
+        });
+
+        totalCarrinho.textContent =
+            "R$ " +
+            total.toFixed(2).replace(".", ",");
+
+        if (carrinho.length === 0) {
+            listaCarrinho.innerHTML =
+                '<li class="vazio">Nenhum item adicionado ainda.</li>';
+        }
+    }
+</script>
