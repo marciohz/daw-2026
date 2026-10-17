@@ -1,6 +1,6 @@
 import "./App.css"
 import { Header } from "./assets/components/layout/header"
-import { Produtos } from "./assets/components/layout/produtos"
+import { Produtos } from "./assets/components/produtos"
 import { Carrinho } from "./assets/components/layout/carrinho"
 import { Footer } from "./assets/components/layout/footer"
 
